@@ -7,10 +7,13 @@ var ISCLicense ='[![License: ISC](https://img.shields.io/badge/License-ISC-blue.
 var PublicLicense ='[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
 
 const generateMarkdown = (answers) =>
- `${answers.title}
- ${answers.licences}
+ `# Project Title: 
+ ## ${answers.title} ${answers.licences}
+ # Description 
  ${answers.description}
+ # Motivation To build
  ${answers.motivation}
+ # What Does this solve 
  ${answers.problems}`;
 
 inquirer
